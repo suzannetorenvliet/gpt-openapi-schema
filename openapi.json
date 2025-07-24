@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "GPT Logger",
+    "version": "1.0.2"
+  },
+  "paths": {
+    "/log-gpt-use": {
+      "post": {
+        "summary": "Log GPT-gebruik",
+        "operationId": "logUsage",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_id": {
+                    "type": "string"
+                  },
+                  "message": {
+                    "type": "string"
+                  }
+                },
+                "required": ["user_id", "message"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Succesvolle logging"
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://gpt-logger-new.onrender.com"
+    }
+  ]
+}
