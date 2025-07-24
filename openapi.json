@@ -5,10 +5,10 @@
     "version": "1.0.2"
   },
   "components": {
-      "schemas": {}
-     "securitySchemes": {}
-},
-"security": [],
+    "schemas": {},
+    "securitySchemes": {}
+  },
+  "security": [],
   "paths": {
     "/log-gpt-use": {
       "post": {
