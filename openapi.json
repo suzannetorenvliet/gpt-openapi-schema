@@ -4,6 +4,10 @@
     "title": "GPT Logger",
     "version": "1.0.2"
   },
+  "components": {
+  "securitySchemes": {}
+},
+"security": [],
   "paths": {
     "/log-gpt-use": {
       "post": {
